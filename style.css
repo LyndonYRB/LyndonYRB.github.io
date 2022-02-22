@@ -1,0 +1,92 @@
+
+body {
+ background-color: darkblue;
+}
+
+.stuffbox {
+width: 500px;
+    display: grid;
+             grid-template-columns: 1fr 1fr 1fr;
+}
+
+.stuff {
+    display: flex;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+}
+
+div {
+    width: 100px;
+    height: 100;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 100px;
+    font-size: 60px;
+margin: 10px;
+}
+.foot {
+   bottom : 1em;
+   height : 5px;
+   position: absolute;
+   width: 100%;
+}
+
+@media screen and (max-width: 500px) {
+ body {     background-color: blue;
+ }
+ .name {
+    font-size: 50px;
+    text-align: center;
+ }
+
+ .stuff {
+width: 100px;
+height: 100px;
+ }
+
+ div { 
+    font-size: 30px;
+ }
+
+.foot {
+   bottom : 1em;
+   height : 10px;
+   margin-top : 5px;
+   text-align: center;
+   vertical-align: middle;
+   position: absolute;
+   width:100%;
+}
+
+ .stuffbox {
+    display: grid;
+             grid-template-columns:  1fr 1fr;
+                 grid-template-rows: 1fr 1fr;
+ }
+}
+@media screen and (min-width: 900px){
+ body {
+     background-color: lightblue;
+
+ }
+ div {
+    font-size: 60px;
+ }
+ 
+ .stuff {
+width: 200px;
+height: 200px;
+      }
+    
+.foot {
+   bottom : 1em;
+   height : 5px;
+   margin-top : 40px;
+   position: absolute;
+   width:100%;
+   font-size: 50px;
+}
+}
